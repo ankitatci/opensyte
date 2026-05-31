@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "~/components/ui/card";
-import { GoogleLoginButton } from "./google-button-login";
+import { EmailAuthForm } from "./email-auth-form";
 import Image from "next/image";
 
 export function LoginPage() {
@@ -42,7 +42,7 @@ export function LoginPage() {
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4 px-4 sm:px-6">
-          <GoogleLoginButton />
+          <EmailAuthForm />
         </CardContent>
         <CardFooter>
           <p className="text-muted-foreground px-4 text-center text-xs sm:px-8 sm:text-sm">
