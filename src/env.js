@@ -15,8 +15,8 @@ export const env = createEnv({
     BETTER_AUTH_SECRET: z.string().min(1, "BETTER_AUTH_SECRET is required"),
     BETTER_AUTH_URL: z.string().url("BETTER_AUTH_URL must be a valid URL"),
     // Google OAuth (optional)
-    GOOGLE_CLIENT_ID: z.string(),
-    GOOGLE_CLIENT_SECRET: z.string(),
+    GOOGLE_CLIENT_ID: z.string().optional(),
+    GOOGLE_CLIENT_SECRET: z.string().optional(),
     // Resend Email Service
     RESEND_API_KEY: z.string().min(1, "RESEND_API_KEY is required"),
     RESEND_FROM_EMAIL: z
